@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receitas",
+  "info": {
+    "name": "Receitas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nome": {
+      "type": "string"
+    },
+    "Ingredientes": {
+      "type": "text"
+    },
+    "Valor": {
+      "type": "decimal"
+    },
+    "Imagem": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
