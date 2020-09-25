@@ -1,0 +1,16 @@
+{
+  "kind": "singleType",
+  "collectionName": "receita_do_dias",
+  "info": {
+    "name": "Receita do Dia"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Receita": {
+      "model": "receitas"
+    }
+  }
+}

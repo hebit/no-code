@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/receita-do-dia",
+      "handler": "receita-do-dia.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/receita-do-dia",
+      "handler": "receita-do-dia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/receita-do-dia",
+      "handler": "receita-do-dia.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

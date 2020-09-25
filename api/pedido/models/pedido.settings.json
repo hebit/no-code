@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "Pedido"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Bolsista": {
+      "type": "boolean",
+      "required": true
+    },
+    "Tipo": {
+      "type": "string",
+      "required": true
+    },
+    "aluno_cliente": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "Pedido"
+    }
+  }
+}
