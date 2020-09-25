@@ -9,7 +9,10 @@
     "timestamps": true
   },
   "attributes": {
-    "Receita": {
+    "vegetariana": {
+      "model": "receitas"
+    },
+    "onivoro": {
       "model": "receitas"
     }
   }

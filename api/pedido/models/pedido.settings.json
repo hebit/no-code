@@ -11,16 +11,21 @@
   "attributes": {
     "Bolsista": {
       "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Vegetariano",
+        "Onivoro"
+      ],
       "required": true
     },
-    "Tipo": {
-      "type": "string",
-      "required": true
-    },
-    "aluno_cliente": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "Pedido"
+    "matricula": {
+      "type": "uid",
+      "required": true,
+      "minLength": 6
     }
   }
 }
